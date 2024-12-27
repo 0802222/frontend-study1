@@ -5,85 +5,75 @@
     box-sizing: border-box;
 }
 
+h2 {
+    margin: 20px 0px 20px 0px;
+}
 
 /* 공통 박스 */
 .box {
-    max-width: 300px;
-    max-height: 300px;
-    background-color: rgb(255, 255, 255);
-    width: 50%;
-    height: 50%;
+    display: flex;
+    width: 300px;
+    height: 300px;
     border: 1px solid rgb(3, 3, 3);
-    padding: 40px;
-    margin: 20px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
 }
 
 
 /* 공통 컨테이너 */
 .container {
-    display: flex;
     gap: 10px;
     justify-content: center;
     align-items: center;
-    height: 100vh; /*화면 전체 높이 사용*/
-    background-color: #f0f0f0;
+    height: 50vh; /*화면 50% 높이 사용*/
+    margin: 20px 0px 20px 0px;
+    background-color: #777272;
 }
 
 
 /* 문제1 */
 .container1 {
-
+    display: flex;
 }
-
-.static-box {
-
+.static {
+    position: static;
 }
 
 
 /* 문제2 */
 .container2 {
-    display: block;
+    display: flex;
 }
 
-.box2-1 {
-
-
+.relative {
+    position: relative;
+    z-index: 1;
 }
 
-.box2-2 {
+.absolute {
+    position: absolute;
     margin: 30px 30px 0 0;
+    text-align: bottom;
 }
 
 
 /* 문제3 */
-.container3 {
-
-}
-
-.fixed-box1 {
+.fixed {
     position: fixed;
-    top: 50px;
-    right: 350px;
+    top: 20px;
+    right: 50px;
 }
-
-.fixed-box2 {
-    position: fixed;
-    top: 50px;
-    right: 0px;
-}
-
 
 /* 문제4 */
 .container4 {
-    align-items: baseline;
-    height: 300vh;
+    height: 130vh; 
 }
-
-
-.sticky-box {
+.sticky {
     position: sticky;
-    top: 50px;
-    height: 80px;
+    top: 20px;
+    height: 80px; 
     width: 100%;
+    margin: 20px 0px 20px 0px;
 }
